@@ -1,0 +1,221 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0044cc;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
+nav {
+  background: #003399;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background: #002266;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0044cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0033aa;
+}
+
+.entry {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.kuva {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.kuva img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.kuva h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #333;
+}
+
+.info-container-ahdistus {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.info-text-ahdistus {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.info-text-ahdistus h1, .info-text h2 {
+  color: #0044cc;
+}
+
+.info-images-ahdistus {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.info-images-ahdistus img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-container-stressi {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.info-text-stressi {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.info-text-stressi h1, .info-text h2 {
+  color: #cc4400;
+}
+
+.info-images-stressi {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.info-images-stressi img {
+  width: 45%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-container-paniikki {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.info-text-paniikki {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.info-text-paniikki h1, .info-text h2 {
+  color: #990000;
+}
+
+.info-images-paniikki {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.info-images-paniikki img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-text {
+  text-align: center;
+  max-width: 700px;
+}
+
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 700px;
+}
+
+.contact-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-section ul li {
+  margin: 10px 0;
+}
+
+.contact-section a {
+  color: #0044cc;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+

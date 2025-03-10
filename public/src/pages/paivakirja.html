@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OloHetki</title>
+    <link rel="stylesheet" href="/public/src/css/style.css">
+</head>
+<body>
+    <header>OloHetki</header>
+    <nav>
+      <a href="etusivu.html">Etusivu</a>
+      <a href="paivakirja.html">Päiväkirja</a>
+      <a href="tietoa.html">Tietoa</a>
+      <a href="ahdistus.html">Ahdistus</a>
+      <a href="stressi.html">Stressi </a>
+      <a href="paniikki.html">Paniikkihäiriö</a>
+      <a href="index.html">Kirjaudu ulos</a>
+    </nav>
+
+    <div class="container">
+      <h1>Tunnepäiväkirja</h1>
+  
+      <input type="text" id="situation" placeholder="Tilanne">
+      <input type="text" id="emotion" placeholder="Tunne">
+  
+      <!-- Ahdistuksen taso -->
+      <h3>Ahdistuksen taso (0-5):</h3>
+      <div id="anxiety-level">
+          <label><input type="checkbox" name="anxiety" value="0"> 0 </label>
+          <label><input type="checkbox" name="anxiety" value="1"> 1 </label>
+          <label><input type="checkbox" name="anxiety" value="2"> 2 </label>
+          <label><input type="checkbox" name="anxiety" value="3"> 3 </label>
+          <label><input type="checkbox" name="anxiety" value="4"> 4 </label>
+          <label><input type="checkbox" name="anxiety" value="5"> 5 </label>
+      </div>
+  
+      <!-- Stressin taso -->
+      <h3>Stressin taso (0-5):</h3>
+      <div id="stress-level">
+          <label><input type="checkbox" name="stress" value="0"> 0 </label>
+          <label><input type="checkbox" name="stress" value="1"> 1 </label>
+          <label><input type="checkbox" name="stress" value="2"> 2 </label>
+          <label><input type="checkbox" name="stress" value="3"> 3 </label>
+          <label><input type="checkbox" name="stress" value="4"> 4 </label>
+          <label><input type="checkbox" name="stress" value="5"> 5 </label>
+      </div>
+  
+      <!-- Paniikin taso -->
+      <h3>Paniikin taso (0-5):</h3>
+      <div id="panic-level">
+          <label><input type="checkbox" name="panic" value="0"> 0 </label>
+          <label><input type="checkbox" name="panic" value="1"> 1 </label>
+          <label><input type="checkbox" name="panic" value="2"> 2 </label>
+          <label><input type="checkbox" name="panic" value="3"> 3 </label>
+          <label><input type="checkbox" name="panic" value="4"> 4 </label>
+          <label><input type="checkbox" name="panic" value="5"> 5 </label>
+      </div>
+  
+      <textarea id="notes" placeholder="Vapaa kuvaus päivän tunnekokemuksista"></textarea>
+      <button onclick="saveEntry()">Lisää merkintä</button>
+      <div id="entries"></div>
+  </div>
+  
+  
+    <script src="/src/js/script.js"></script>
+</body>
+</html>
