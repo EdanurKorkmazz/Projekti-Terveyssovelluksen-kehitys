@@ -30,9 +30,9 @@ robotframework-pythonlibcore==4.4.1
 robotframework-requests==0.9.7
 robotframework-tidy==4.16.0
 seedir==0.5.0
-setuptools==76.0.0
+setuptools==78.1.0
 tomli==2.2.1
-typing_extensions==4.12.2
+typing_extensions==4.13.0
 urllib3==2.3.0
 wcwidth==0.2.13
 wrapt==1.17.2

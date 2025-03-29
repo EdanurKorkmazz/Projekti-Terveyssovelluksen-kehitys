@@ -1,0 +1,30 @@
+{"level":30,"time":"2025-03-29T22:37:52.195Z","pid":32392,"hostname":"Eda","msg":"Listening on 64706"}
+(node:32392) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-29T22:37:52.367Z","pid":32392,"hostname":"Eda","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-29T22:37:52.642Z","pid":32392,"hostname":"Eda","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-03-29T22:37:52.643Z","pid":32392,"hostname":"Eda","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-29T22:37:52.642Z","pid":32392,"hostname":"Eda","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-29T22:37:52.653Z","pid":32392,"hostname":"Eda","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-29T22:37:52.654Z","pid":32392,"hostname":"Eda","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-29T22:37:52.672Z","pid":32392,"hostname":"Eda","msg":"Changed active context"}
+{"level":30,"time":"2025-03-29T22:37:52.857Z","pid":32392,"hostname":"Eda","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-29T22:37:52.858Z","pid":32392,"hostname":"Eda","msg":"Changed active page"}
+{"level":30,"time":"2025-03-29T22:37:52.891Z","pid":32392,"hostname":"Eda","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-29T22:37:52.898Z","pid":32392,"hostname":"Eda","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-03-29T22:37:52.898Z","pid":32392,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with css=.login-container in page."}
+{"level":30,"time":"2025-03-29T22:38:02.916Z","pid":32392,"hostname":"Eda","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('.login-container') to be visible[22m
+
+    at waitForElementState (C:\Users\Edanu\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:11283:19)
+    at async PlaywrightServer.waitForElementsState (C:\Users\Edanu\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-03-29T22:38:02.944Z","pid":32392,"hostname":"Eda","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-29T22:38:02.944Z","pid":32392,"hostname":"Eda","Take screenshot with options: ":{"path":"C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-29T22:38:03.063Z","pid":32392,"hostname":"Eda","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-03-29T22:38:06.879Z","pid":32392,"hostname":"Eda","msg":"Removed page=ab874ffb-e09c-4c39-89e7-c0ef32812d13 from context=47dd0bbc-f1d7-445c-9f03-5a9ad95e16a2 page stack"}

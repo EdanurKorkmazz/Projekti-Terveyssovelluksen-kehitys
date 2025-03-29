@@ -1,0 +1,44 @@
+{"level":30,"time":"2025-03-29T22:24:32.378Z","pid":27204,"hostname":"Eda","msg":"Listening on 64577"}
+(node:27204) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-29T22:24:32.940Z","pid":27204,"hostname":"Eda","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-29T22:24:33.198Z","pid":27204,"hostname":"Eda","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-03-29T22:24:33.199Z","pid":27204,"hostname":"Eda","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-29T22:24:33.208Z","pid":27204,"hostname":"Eda","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-29T22:24:33.199Z","pid":27204,"hostname":"Eda","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-29T22:24:33.207Z","pid":27204,"hostname":"Eda","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-29T22:24:33.228Z","pid":27204,"hostname":"Eda","msg":"Changed active context"}
+{"level":30,"time":"2025-03-29T22:24:33.413Z","pid":27204,"hostname":"Eda","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-29T22:24:33.414Z","pid":27204,"hostname":"Eda","msg":"Changed active page"}
+{"level":30,"time":"2025-03-29T22:24:33.775Z","pid":27204,"hostname":"Eda","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-29T22:24:33.793Z","pid":27204,"hostname":"Eda","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-29T22:24:33.793Z","pid":27204,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2025-03-29T22:24:36.011Z","pid":27204,"hostname":"Eda","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-29T22:24:36.017Z","pid":27204,"hostname":"Eda","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-29T22:24:36.017Z","pid":27204,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2025-03-29T22:24:37.344Z","pid":27204,"hostname":"Eda","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-29T22:24:37.348Z","pid":27204,"hostname":"Eda","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-29T22:24:37.348Z","pid":27204,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2025-03-29T22:24:41.942Z","pid":27204,"hostname":"Eda","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-29T22:24:41.946Z","pid":27204,"hostname":"Eda","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-03-29T22:24:41.946Z","pid":27204,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with select[name=\"my-select\"] in page."}
+{"level":30,"time":"2025-03-29T22:24:41.976Z","pid":27204,"hostname":"Eda","msg":"Option entries: 4"}
+{"level":30,"time":"2025-03-29T22:24:41.976Z","pid":27204,"hostname":"Eda","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-03-29T22:24:41.976Z","pid":27204,"hostname":"Eda","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-03-29T22:24:41.984Z","pid":27204,"hostname":"Eda","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-03-29T22:24:41.984Z","pid":27204,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with [name=\"my-datalist\"] in page."}
+{"level":30,"time":"2025-03-29T22:24:43.415Z","pid":27204,"hostname":"Eda","msg":"End of node method typeText"}
+{"level":30,"time":"2025-03-29T22:24:43.419Z","pid":27204,"hostname":"Eda","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2025-03-29T22:24:43.419Z","pid":27204,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with id=my-check-1 in page."}
+{"level":30,"time":"2025-03-29T22:24:43.428Z","pid":27204,"hostname":"Eda","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2025-03-29T22:24:43.431Z","pid":27204,"hostname":"Eda","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2025-03-29T22:24:43.432Z","pid":27204,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with id=my-radio-1 in page."}
+{"level":30,"time":"2025-03-29T22:24:43.438Z","pid":27204,"hostname":"Eda","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2025-03-29T22:24:43.442Z","pid":27204,"hostname":"Eda","msg":"Start of node method click"}
+{"level":30,"time":"2025-03-29T22:24:43.442Z","pid":27204,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with button in page."}
+{"level":30,"time":"2025-03-29T22:24:45.709Z","pid":27204,"hostname":"Eda","msg":"End of node method click"}
+{"level":30,"time":"2025-03-29T22:24:45.713Z","pid":27204,"hostname":"Eda","msg":"Start of node method getText"}
+{"level":30,"time":"2025-03-29T22:24:45.713Z","pid":27204,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with id=message in page."}
+{"level":30,"time":"2025-03-29T22:24:45.748Z","pid":27204,"hostname":"Eda","msg":"Retrieved text for element id=message containing Received!"}
+{"level":30,"time":"2025-03-29T22:24:45.748Z","pid":27204,"hostname":"Eda","msg":"End of node method getText"}
+{"level":30,"time":"2025-03-29T22:25:06.253Z","pid":27204,"hostname":"Eda","msg":"Removed page=0d78bdc3-80ff-4341-aae4-f068a51d709a from context=7bb5098b-d811-4245-85b7-59d8a1505e2c page stack"}
