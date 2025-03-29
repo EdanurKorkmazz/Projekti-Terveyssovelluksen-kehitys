@@ -11,8 +11,8 @@
 
 ## Tehtävä 2: 
 ### Kirjautumistesti omalle terveyspäiväkirja-sovellukselle on tehty.
-### Toteutus
-### -Tiedosto: browser_demo.robot
+### Toteutus:
+#### -Tiedosto: browser_demo.robot
 ### -Testaa kirjautumista annetuilla tunnuksilla
 ### -Varmistaa että käyttäjä ohjataan kirjautumisen jälkeen etusivulle
 ![2](</public/img/tehtävä 2.png>)
@@ -29,8 +29,8 @@
 ### Toteutus:
 ### -Tiedosto: browser_demo.robot
 ### -Käyttää aiemmin luotua Keywords.robot-tiedostoa kirjautumistunnuksille
-### -Testaa sovelluksen päätoiminnallisuutta - päiväkirjamerkintöjen lisäämistä
-![4](</public/img/Asennukset.png>)
+#### -Testaa sovelluksen päätoiminnallisuutta - päiväkirjamerkintöjen lisäämistä
+![4](</public/img/>)
 
 
 
