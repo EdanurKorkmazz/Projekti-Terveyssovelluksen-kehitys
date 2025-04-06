@@ -1,125 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-03-30T00:49:12.742681" rpa="false" schemaversion="5">
-<suite id="s1" name="Browser Demo" source="C:\Users\Edanu\.vscode\Web-Sovelluskehitys\FE\Yksilöprojekti\browser_demo.robot">
-<test id="s1-t1" name="Lisää Uusi Päiväkirjamerkintä" line="7">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-07T00:51:53.739188" rpa="false" schemaversion="5">
+<suite id="s1" name="Browser Demo" source="C:\Users\Edanu\.vscode\Web-Sovelluskehitys\FE\Yksilöprojekti\test\browser_demo.robot">
+<test id="s1-t1" name="Lisää uusi päiväkirjamerkintä" line="11">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-03-30T00:49:13.030954" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksil\u00f6projekti\\browser\\traces\\temp\\6073480d-3685-4e8b-8efd-a34af4d0229a"}</msg>
-<msg time="2025-03-30T00:49:13.067524" level="INFO">Starting Browser process C:\Users\Edanu\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 64832</msg>
-<msg time="2025-03-30T00:49:13.067694" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Edanu\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '64832']</msg>
-<msg time="2025-03-30T00:49:14.510496" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\browser\\traces\\temp\\6073480d-3685-4e8b-8efd-a34af4d0229a"}</msg>
+<msg time="2025-04-07T00:51:54.106766" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksil\u00f6projekti\\browser\\traces\\temp\\b4710d91-8929-473f-8e47-3d82710e1bc7"}</msg>
+<msg time="2025-04-07T00:51:54.179930" level="INFO">Starting Browser process C:\Users\Edanu\.vscode\Web-Sovelluskehitys\FE\Yksilöprojekti\.venv\Lib\site-packages\Browser\wrapper\index.js using port 61188</msg>
+<msg time="2025-04-07T00:51:54.180260" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '61188']</msg>
+<msg time="2025-04-07T00:51:56.252435" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\browser\\traces\\temp\\b4710d91-8929-473f-8e47-3d82710e1bc7"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-03-30T00:49:13.029888" elapsed="1.480982"/>
+<status status="PASS" start="2025-04-07T00:51:54.105174" elapsed="2.147607"/>
 </kw>
-<kw name="Kirjaudu Sisään">
 <kw name="New Page" owner="Browser">
-<msg time="2025-03-30T00:49:14.753906" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
-<msg time="2025-03-30T00:49:14.754057" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>http://localhost:3000</arg>
+<msg time="2025-04-07T00:51:56.556753" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<msg time="2025-04-07T00:51:56.556928" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${FRONT_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-03-30T00:49:14.512698" elapsed="0.241671"/>
+<status status="PASS" start="2025-04-07T00:51:56.253491" elapsed="0.303826"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-03-30T00:49:24.960493" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2025-03-30T00:49:24.960744" level="INFO">See also file:///C:/Users/Edanu/.vscode/Web-Sovelluskehitys/FE/Yksil%C3%B6projekti/playwright-log-1743288552961536600.txt for additional details.</msg>
-<msg time="2025-03-30T00:49:24.961291" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('.login-container') to be visible
-</msg>
-<arg>css=.login-container</arg>
+<msg time="2025-04-07T00:51:56.608461" level="INFO">Waited for Element with selector body at state visible</msg>
+<arg>body</arg>
 <arg>visible</arg>
+<arg>timeout=10s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="FAIL" start="2025-03-30T00:49:14.754768" elapsed="10.212059">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('.login-container') to be visible
-</status>
+<status status="PASS" start="2025-04-07T00:51:56.558195" elapsed="0.050526"/>
 </kw>
-<kw name="Fill Text" owner="Browser">
-<arg>id=username</arg>
-<arg>testuser</arg>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-04-07T00:51:56.978950" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/alkutilanne.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/alkutilanne.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=alkutilanne.png</arg>
+<arg>fullPage=True</arg>
 <tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.967065" elapsed="0.000216"/>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-04-07T00:51:56.609424" elapsed="0.369735"/>
 </kw>
-<kw name="Type Secret" owner="Browser">
-<arg>id=password</arg>
-<arg>$Password</arg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-04-07T00:51:56.989306" level="INFO">${has_diary_link} = 0</msg>
+<var>${has_diary_link}</var>
+<arg>a:has-text("Päiväkirja")</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
 <tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Types the given secret from ``variable_name`` into the text field
-found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.967423" elapsed="0.000168"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-04-07T00:51:56.979696" elapsed="0.009716"/>
 </kw>
+<if>
+<branch type="IF" condition="${has_diary_link} &gt; 0">
 <kw name="Click" owner="Browser">
-<arg>css=button[type="submit"]</arg>
+<arg>a:has-text("Päiväkirja")</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.967750" elapsed="0.000146"/>
+<status status="NOT RUN" start="2025-04-07T00:51:56.990655" elapsed="0.000240"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<arg>css=header</arg>
+<arg>body</arg>
 <arg>visible</arg>
+<arg>timeout=5s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.968023" elapsed="0.000142"/>
+<status status="NOT RUN" start="2025-04-07T00:51:56.991085" elapsed="0.000230"/>
 </kw>
+<kw name="Take Screenshot" owner="Browser">
+<arg>filename=paivakirjasivu.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:56.991502" elapsed="0.000286"/>
+</kw>
+<status status="NOT RUN" start="2025-04-07T00:51:56.989890" elapsed="0.002024"/>
+</branch>
+<status status="PASS" start="2025-04-07T00:51:56.989835" elapsed="0.002192"/>
+</if>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-04-07T00:51:57.000303" level="INFO">${has_situation} = 0</msg>
+<var>${has_situation}</var>
+<arg>id=situation</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-04-07T00:51:56.992380" elapsed="0.007984"/>
+</kw>
+<if>
+<branch type="IF" condition="${has_situation} == 0">
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-04-07T00:51:57.008895" level="INFO">${buttons} = 0</msg>
+<var>${buttons}</var>
+<arg>button</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-04-07T00:51:57.001367" elapsed="0.007600"/>
+</kw>
+<if>
+<branch type="IF" condition="${buttons} &gt; 0">
 <kw name="Get Text" owner="Browser">
-<arg>css=header</arg>
-<arg>==</arg>
-<arg>OloHetki</arg>
+<var>${button_texts}</var>
+<arg>button</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.968300" elapsed="0.000141"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.009731" elapsed="0.000196"/>
 </kw>
-<status status="FAIL" start="2025-03-30T00:49:14.511751" elapsed="10.456865">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('.login-container') to be visible
-</status>
+<kw name="Log" owner="BuiltIn">
+<arg>Löytyi painikkeita: ${button_texts}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.010111" elapsed="0.000183"/>
 </kw>
-<kw name="Click" owner="Browser">
-<arg>text=Päiväkirja</arg>
+<status status="NOT RUN" start="2025-04-07T00:51:57.009167" elapsed="0.001206"/>
+</branch>
+<status status="PASS" start="2025-04-07T00:51:57.009129" elapsed="0.001311"/>
+</if>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-04-07T00:51:57.018773" level="INFO">${links} = 0</msg>
+<var>${links}</var>
+<arg>a</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
 <tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.969100" elapsed="0.000360"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-04-07T00:51:57.010555" elapsed="0.008286"/>
 </kw>
-<kw name="Wait For Elements State" owner="Browser">
-<arg>h1</arg>
-<arg>visible</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.969871" elapsed="0.000158"/>
-</kw>
+<if>
+<branch type="IF" condition="${links} &gt; 0">
 <kw name="Get Text" owner="Browser">
-<arg>h1</arg>
-<arg>==</arg>
-<arg>Tunnepäiväkirja</arg>
+<var>${link_texts}</var>
+<arg>a</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.970245" elapsed="0.000162"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.019590" elapsed="0.000197"/>
 </kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Löytyi linkkejä: ${link_texts}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.019965" elapsed="0.000185"/>
+</kw>
+<status status="NOT RUN" start="2025-04-07T00:51:57.019023" elapsed="0.001202"/>
+</branch>
+<status status="PASS" start="2025-04-07T00:51:57.018989" elapsed="0.001296"/>
+</if>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-04-07T00:51:57.029672" level="INFO">${new_entry_btn} = 0</msg>
+<var>${new_entry_btn}</var>
+<arg>button:has-text("Uusi merkintä"), a:has-text("Uusi merkintä")</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-04-07T00:51:57.020398" elapsed="0.009348"/>
+</kw>
+<if>
+<branch type="IF" condition="${new_entry_btn} &gt; 0">
+<kw name="Click" owner="Browser">
+<arg>button:has-text("Uusi merkintä"), a:has-text("Uusi merkintä")</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.030963" elapsed="0.000243"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>body</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.031440" elapsed="0.000250"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<arg>filename=uusi_merkinta.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.031924" elapsed="0.000285"/>
+</kw>
+<status status="NOT RUN" start="2025-04-07T00:51:57.030264" elapsed="0.002071"/>
+</branch>
+<status status="PASS" start="2025-04-07T00:51:57.030197" elapsed="0.002247"/>
+</if>
+<status status="PASS" start="2025-04-07T00:51:57.000814" elapsed="0.031693"/>
+</branch>
+<status status="PASS" start="2025-04-07T00:51:57.000770" elapsed="0.031819"/>
+</if>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-04-07T00:51:57.040386" level="INFO">${has_situation_now} = 0</msg>
+<var>${has_situation_now}</var>
+<arg>id=situation</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-04-07T00:51:57.033183" elapsed="0.007311"/>
+</kw>
+<if>
+<branch type="IF" condition="${has_situation_now} &gt; 0">
 <kw name="Fill Text" owner="Browser">
 <arg>id=situation</arg>
 <arg>Testaus Robot Frameworkilla</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.970709" elapsed="0.000173"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.042027" elapsed="0.000337"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>id=emotion</arg>
@@ -127,52 +221,52 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.971096" elapsed="0.000162"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.042645" elapsed="0.000261"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${anxiety_level}</var>
 <arg>2</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.971481" elapsed="0.000164"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.043106" elapsed="0.000202"/>
 </kw>
-<kw name="Check Checkbox" owner="Browser">
+<kw name="Click" owner="Browser">
 <arg>css=[name="anxiety"][value="${anxiety_level}"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.971885" elapsed="0.000151"/>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.043481" elapsed="0.000181"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${stress_level}</var>
 <arg>3</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.972352" elapsed="0.000165"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.043816" elapsed="0.000180"/>
 </kw>
-<kw name="Check Checkbox" owner="Browser">
+<kw name="Click" owner="Browser">
 <arg>css=[name="stress"][value="${stress_level}"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.972724" elapsed="0.000150"/>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.044160" elapsed="0.000183"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${panic_level}</var>
 <arg>1</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.973074" elapsed="0.000162"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.044501" elapsed="0.000194"/>
 </kw>
-<kw name="Check Checkbox" owner="Browser">
+<kw name="Click" owner="Browser">
 <arg>css=[name="panic"][value="${panic_level}"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
-<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.973655" elapsed="0.000160"/>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.044840" elapsed="0.000172"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
 <var>${kuvaus}</var>
 <arg>Tämä on Robot Frameworkilla tehty automaattinen testitapaus päiväkirjamerkinnän lisäämisestä.</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.974024" elapsed="0.000151"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.045168" elapsed="0.000175"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
 <arg>id=notes</arg>
@@ -180,41 +274,145 @@ Call log:
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.974376" elapsed="0.000149"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.045489" elapsed="0.000182"/>
 </kw>
+<kw name="Take Screenshot" owner="Browser">
+<arg>filename=taytetty_lomake.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.045825" elapsed="0.000172"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<var>${save_btn}</var>
+<arg>button:has-text("Lisää merkintä")</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.046147" elapsed="0.000175"/>
+</kw>
+<if>
+<branch type="IF" condition="${save_btn} &gt; 0">
 <kw name="Click" owner="Browser">
-<arg>text=Lisää merkintä</arg>
+<arg>button:has-text("Lisää merkintä")</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.974734" elapsed="0.000146"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.046741" elapsed="0.000177"/>
 </kw>
-<kw name="Wait For Elements State" owner="Browser">
-<arg>css=#entries</arg>
-<arg>visible</arg>
+<status status="NOT RUN" start="2025-04-07T00:51:57.046473" elapsed="0.000524"/>
+</branch>
+<branch type="ELSE">
+<kw name="Get Element Count" owner="Browser">
+<var>${other_btn}</var>
+<arg>button:has-text("Tallenna"), button:has-text("Lähetä"), button[type="submit"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
 <tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.975102" elapsed="0.000149"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.047318" elapsed="0.000177"/>
 </kw>
+<if>
+<branch type="IF" condition="${other_btn} &gt; 0">
+<kw name="Click" owner="Browser">
+<arg>button:has-text("Tallenna"), button:has-text("Lähetä"), button[type="submit"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.047895" elapsed="0.000216"/>
+</kw>
+<status status="NOT RUN" start="2025-04-07T00:51:57.047627" elapsed="0.000562"/>
+</branch>
+<branch type="ELSE">
+<kw name="Click" owner="Browser">
+<arg>button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.048498" elapsed="0.000174"/>
+</kw>
+<status status="NOT RUN" start="2025-04-07T00:51:57.048242" elapsed="0.000508"/>
+</branch>
+<status status="NOT RUN" start="2025-04-07T00:51:57.047603" elapsed="0.001199"/>
+</if>
+<status status="NOT RUN" start="2025-04-07T00:51:57.047056" elapsed="0.001780"/>
+</branch>
+<status status="NOT RUN" start="2025-04-07T00:51:57.046442" elapsed="0.002435"/>
+</if>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.048970" elapsed="0.000173"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<arg>filename=tallennettu.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.049287" elapsed="0.000172"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<var>${entries_element}</var>
+<arg>id=entries, .entries, [data-testid="entries"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.049605" elapsed="0.000170"/>
+</kw>
+<if>
+<branch type="IF" condition="${entries_element} &gt; 0">
 <kw name="Get Text" owner="Browser">
-<arg>css=#entries</arg>
-<arg>contains</arg>
-<arg>${kuvaus}</arg>
+<var>${entries_text}</var>
+<arg>id=entries, .entries, [data-testid="entries"]</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-03-30T00:49:24.975550" elapsed="0.000169"/>
+<status status="NOT RUN" start="2025-04-07T00:51:57.050416" elapsed="0.000179"/>
 </kw>
-<msg time="2025-03-30T00:49:24.980043" level="INFO">Set timeout to: 10000</msg>
-<status status="FAIL" start="2025-03-30T00:49:13.027623" elapsed="11.948399">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  - waiting for locator('.login-container') to be visible
-</status>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${entries_text}</arg>
+<arg>${kuvaus}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.050749" elapsed="0.000172"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Merkintä tallennettu onnistuneesti</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.051063" elapsed="0.000169"/>
+</kw>
+<status status="NOT RUN" start="2025-04-07T00:51:57.050139" elapsed="0.001164"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log" owner="BuiltIn">
+<arg>Varoitus: Merkintöjen näyttöelementtiä ei löytynyt, mutta merkintä saattoi silti tallentua</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-07T00:51:57.051607" elapsed="0.000176"/>
+</kw>
+<status status="NOT RUN" start="2025-04-07T00:51:57.051354" elapsed="0.000500"/>
+</branch>
+<status status="NOT RUN" start="2025-04-07T00:51:57.050112" elapsed="0.001789"/>
+</if>
+<status status="NOT RUN" start="2025-04-07T00:51:57.041194" elapsed="0.010738"/>
+</branch>
+<branch type="ELSE">
+<kw name="Fail" owner="BuiltIn">
+<msg time="2025-04-07T00:51:57.052704" level="FAIL">Merkinnän lisäyslomaketta ei löytynyt</msg>
+<arg>Merkinnän lisäyslomaketta ei löytynyt</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="FAIL" start="2025-04-07T00:51:57.052227" elapsed="0.000698">Merkinnän lisäyslomaketta ei löytynyt</status>
+</kw>
+<status status="FAIL" start="2025-04-07T00:51:57.051977" elapsed="0.001064">Merkinnän lisäyslomaketta ei löytynyt</status>
+</branch>
+<status status="FAIL" start="2025-04-07T00:51:57.041137" elapsed="0.011965">Merkinnän lisäyslomaketta ei löytynyt</status>
+</if>
+<msg time="2025-04-07T00:51:57.059049" level="INFO">Set timeout to: 10000</msg>
+<status status="FAIL" start="2025-04-07T00:51:54.103510" elapsed="2.950151">Merkinnän lisäyslomaketta ei löytynyt</status>
 </test>
-<doc>Testi uuden päiväkirjamerkinnän tekemiseen OloHetki-sovelluksessa</doc>
-<status status="FAIL" start="2025-03-30T00:49:12.745185" elapsed="12.236952"/>
+<doc>Testi päiväkirjamerkinnän lisäämiseen OloHetki-sovelluksessa</doc>
+<status status="FAIL" start="2025-04-07T00:51:53.743094" elapsed="3.317851"/>
 </suite>
 <statistics>
 <total>
