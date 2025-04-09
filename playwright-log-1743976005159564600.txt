@@ -33,3 +33,4 @@ Call log:
 {"level":30,"time":"2025-04-06T21:46:57.738Z","pid":13864,"hostname":"Eda","msg":"Start of node method takeScreenshot"}
 {"level":30,"time":"2025-04-06T21:46:57.738Z","pid":13864,"hostname":"Eda","Take screenshot with options: ":{"path":"C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
 {"level":30,"time":"2025-04-06T21:46:57.872Z","pid":13864,"hostname":"Eda","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-06T21:55:05.743Z","pid":13864,"hostname":"Eda","msg":"Removed page=5ebee992-1e8a-40db-bae8-68c29782a7a0 from context=8c08d1aa-d8f0-4706-9288-1f836aebaaec page stack"}

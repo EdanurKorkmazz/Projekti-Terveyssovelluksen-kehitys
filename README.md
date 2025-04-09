@@ -27,10 +27,18 @@
 ## Tehtävä 4: 
 ### Testi lisää uuden päiväkirjamerkinnän OloHetki-sovellukseen.
 #### Toteutus:
-#### -Tiedosto: browser_demo.robot
+#### -Tiedosto: test/browser_demo.robot
 #### -Käyttää aiemmin luotua Keywords.robot-tiedostoa kirjautumistunnuksille
 #### -Testaa sovelluksen päätoiminnallisuutta - päiväkirjamerkintöjen lisäämistä
-![4](</public/img/>)
+#### -En saanut testiä läpäistyä hyväksitysti. Työstin noin 4 päivää, joten jatkan muita tehtäviä ja palaan tähän tehtävään myöhemmin.
+![4](</public/img/tehtävä 4.png>)
+
+
+## Tehtävä 5: 
+###  
+#### -
+#### -
+![5](</public/img/>)
 
 
 

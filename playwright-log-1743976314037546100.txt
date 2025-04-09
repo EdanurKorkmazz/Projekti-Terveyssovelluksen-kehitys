@@ -35,3 +35,4 @@
 {"level":30,"time":"2025-04-06T21:51:57.027Z","pid":26996,"hostname":"Eda","msg":"Start of node method getElementCount"}
 {"level":30,"time":"2025-04-06T21:51:57.027Z","pid":26996,"hostname":"Eda","msg":"Strict mode is disabled, return Locator: id=situation in page."}
 {"level":30,"time":"2025-04-06T21:51:57.030Z","pid":26996,"hostname":"Eda","msg":"End of node method getElementCount"}
+{"level":30,"time":"2025-04-06T21:55:05.774Z","pid":26996,"hostname":"Eda","msg":"Removed page=e87e1376-b140-4e7f-b118-8849147064c7 from context=fda4fb89-4bc0-49d7-b328-9951109690b3 page stack"}
