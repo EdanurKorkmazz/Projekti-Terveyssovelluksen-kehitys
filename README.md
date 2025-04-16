@@ -43,6 +43,7 @@
 ### Tässä tehtävässä toteutin kirjautumistestin OloHetki-sovellukselle, joka käyttää CryptoLibrary-kirjastoa käyttäjätunnuksen ja salasanan salaamiseen. Tämä on turvallisempi tapa kuin käyttää tavallisia .env-tiedostoja, koska tunnukset ovat salattuna testin lähdekoodissa.
 #### -login_crypto_test.robot - Pääasiallinen kirjautumistesti, joka käyttää kryptattuja tunnuksia
 #### -generate_credentials.robot - Apuskripti uusien salattujen tunnusten luomiseen
+#### - Ei läpäise testiä jatkan työstämistä!
 
 ![6](</public/img/teht 6.png>)
 
