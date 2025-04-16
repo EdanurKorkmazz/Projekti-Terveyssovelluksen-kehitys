@@ -1,0 +1,63 @@
+{"level":30,"time":"2025-04-16T21:55:40.429Z","pid":19284,"hostname":"Eda","msg":"Listening on 63623"}
+(node:19284) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-16T21:55:40.695Z","pid":19284,"hostname":"Eda","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-16T21:55:41.138Z","pid":19284,"hostname":"Eda","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-16T21:55:41.140Z","pid":19284,"hostname":"Eda","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-16T21:55:41.140Z","pid":19284,"hostname":"Eda","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-16T21:55:41.154Z","pid":19284,"hostname":"Eda","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-16T21:55:41.155Z","pid":19284,"hostname":"Eda","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-16T21:55:41.183Z","pid":19284,"hostname":"Eda","msg":"Changed active context"}
+{"level":30,"time":"2025-04-16T21:55:41.485Z","pid":19284,"hostname":"Eda","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-16T21:55:41.485Z","pid":19284,"hostname":"Eda","msg":"Changed active page"}
+{"level":30,"time":"2025-04-16T21:55:41.544Z","pid":19284,"hostname":"Eda","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-16T21:55:41.556Z","pid":19284,"hostname":"Eda","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-16T21:55:41.556Z","pid":19284,"hostname":"Eda","Take screenshot with options: ":{"path":"C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\browser\\screenshot\\sivu_alkutila_20250417_005538.png.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-04-16T21:55:42.000Z","pid":19284,"hostname":"Eda","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-16T21:55:42.007Z","pid":19284,"hostname":"Eda","msg":"Start of node method getElement"}
+{"level":30,"time":"2025-04-16T21:55:42.008Z","pid":19284,"hostname":"Eda","msg":"Strict mode is enabled, find Locator with css=form in page."}
+{"level":30,"time":"2025-04-16T21:55:52.027Z","pid":19284,"hostname":"Eda","msg":"Error of node method  getElement"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('form')[22m
+
+    at getElement (C:\Users\Edanu\.vscode\Web-Sovelluskehitys\FE\Yksilöprojekti\.venv\Lib\site-packages\Browser\wrapper\index.js:11165:17)
+    at async PlaywrightServer.getElement (C:\Users\Edanu\.vscode\Web-Sovelluskehitys\FE\Yksilöprojekti\.venv\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-04-16T21:55:52.067Z","pid":19284,"hostname":"Eda","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-16T21:55:52.067Z","pid":19284,"hostname":"Eda","Take screenshot with options: ":{"path":"C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-04-16T21:55:52.225Z","pid":19284,"hostname":"Eda","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-16T21:55:52.242Z","pid":19284,"hostname":"Eda","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2025-04-16T21:55:52.243Z","pid":19284,"hostname":"Eda","msg":"Strict mode is disabled, return Locator: header:has-text(\"OloHetki\") in page."}
+{"level":30,"time":"2025-04-16T21:55:52.248Z","pid":19284,"hostname":"Eda","msg":"End of node method getElementCount"}
+{"level":30,"time":"2025-04-16T21:55:52.252Z","pid":19284,"hostname":"Eda","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2025-04-16T21:55:52.252Z","pid":19284,"hostname":"Eda","msg":"Strict mode is disabled, return Locator: nav in page."}
+{"level":30,"time":"2025-04-16T21:55:52.256Z","pid":19284,"hostname":"Eda","msg":"End of node method getElementCount"}
+{"level":30,"time":"2025-04-16T21:55:52.263Z","pid":19284,"hostname":"Eda","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2025-04-16T21:55:52.263Z","pid":19284,"hostname":"Eda","msg":"Strict mode is disabled, return Locator: css=input[type=\"text\"], input[name=\"username\"], input#username in page."}
+{"level":30,"time":"2025-04-16T21:55:52.267Z","pid":19284,"hostname":"Eda","msg":"End of node method getElementCount"}
+{"level":30,"time":"2025-04-16T21:55:52.274Z","pid":19284,"hostname":"Eda","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2025-04-16T21:55:52.274Z","pid":19284,"hostname":"Eda","msg":"Strict mode is disabled, return Locator: css=input[type=\"password\"], input[name=\"password\"], input#password in page."}
+{"level":30,"time":"2025-04-16T21:55:52.278Z","pid":19284,"hostname":"Eda","msg":"End of node method getElementCount"}
+{"level":30,"time":"2025-04-16T21:55:52.294Z","pid":19284,"hostname":"Eda","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-04-16T21:55:52.294Z","pid":19284,"hostname":"Eda","Take screenshot with options: ":{"path":"C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\browser\\screenshot\\ei_lomaketta_20250417_005538.png.png","fileType":"png","fullPage":true,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-04-16T21:55:52.434Z","pid":19284,"hostname":"Eda","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-04-16T21:55:52.453Z","pid":19284,"hostname":"Eda","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-16T21:55:52.457Z","pid":19284,"hostname":"Eda","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-16T21:55:52.460Z","pid":19284,"hostname":"Eda","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-16T21:55:52.462Z","pid":19284,"hostname":"Eda","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-16T21:55:52.464Z","pid":19284,"hostname":"Eda","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-16T21:55:52.466Z","pid":19284,"hostname":"Eda","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-16T21:55:52.470Z","pid":19284,"hostname":"Eda","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-16T21:55:52.473Z","pid":19284,"hostname":"Eda","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-04-16T21:55:52.477Z","pid":19284,"hostname":"Eda","msg":"Changed active context"}
+{"level":30,"time":"2025-04-16T21:55:52.477Z","pid":19284,"hostname":"Eda","msg":"Changing current active page: page=498859bf-b115-497c-a8a7-63f82f509bd7"}
+{"level":30,"time":"2025-04-16T21:55:52.477Z","pid":19284,"hostname":"Eda","msg":"Changed active page"}
+{"level":30,"time":"2025-04-16T21:55:52.483Z","pid":19284,"hostname":"Eda","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-04-16T21:55:52.505Z","pid":19284,"hostname":"Eda","msg":"Removed page=a389ed6d-6777-49bd-a0ea-ee1f27e360a8 from context=3487c51d-399a-4a09-bfb3-679fff3199ab page stack"}
+{"level":30,"time":"2025-04-16T21:55:52.549Z","pid":19284,"hostname":"Eda","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-04-16T21:55:52.688Z","pid":19284,"hostname":"Eda","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-04-16T21:55:53.033Z","pid":19284,"hostname":"Eda","msg":"End of node method closeAllBrowsers"}

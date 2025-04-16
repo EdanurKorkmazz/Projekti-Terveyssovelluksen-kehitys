@@ -1,420 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-09T14:23:26.015615" rpa="false" schemaversion="5">
-<suite id="s1" name="Browser Demo" source="C:\Users\Edanu\.vscode\Web-Sovelluskehitys\FE\Yksilöprojekti\test\browser_demo.robot">
-<test id="s1-t1" name="Lisää uusi päiväkirjamerkintä" line="11">
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-04-17T00:55:38.533657" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Env Test" source="C:\Users\Edanu\.vscode\Web-Sovelluskehitys\FE\Yksilöprojekti\tests\front\login_env_test.robot">
+<test id="s1-t1" name="Kirjautuminen Onnistuu Env-Muuttujilla" line="16">
+<kw name="Load Dotenv" owner="env_loader">
+<doc>Lataa .env-tiedoston sisällön ympäristömuuttujiin</doc>
+<status status="PASS" start="2025-04-17T00:55:38.948229" elapsed="0.019822"/>
+</kw>
+<kw name="Get Environment Variable" owner="env_loader">
+<msg time="2025-04-17T00:55:38.968753" level="WARN">Keyword 'Get Environment Variable' found both from a custom library 'env_loader' and a standard library 'OperatingSystem'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'env_loader.Get Environment Variable' or 'OperatingSystem.Get Environment Variable'.</msg>
+<msg time="2025-04-17T00:55:38.970537" level="INFO">${username} = d</msg>
+<var>${username}</var>
+<arg>USERNAME</arg>
+<doc>Hakee ympäristömuuttujan arvon</doc>
+<status status="PASS" start="2025-04-17T00:55:38.968874" elapsed="0.001737"/>
+</kw>
+<kw name="Get Environment Variable" owner="env_loader">
+<msg time="2025-04-17T00:55:38.971059" level="WARN">Keyword 'Get Environment Variable' found both from a custom library 'env_loader' and a standard library 'OperatingSystem'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'env_loader.Get Environment Variable' or 'OperatingSystem.Get Environment Variable'.</msg>
+<msg time="2025-04-17T00:55:38.972152" level="INFO">${password} = d</msg>
+<var>${password}</var>
+<arg>PASSWORD</arg>
+<doc>Hakee ympäristömuuttujan arvon</doc>
+<status status="PASS" start="2025-04-17T00:55:38.971137" elapsed="0.001063"/>
+</kw>
+<kw name="Get Environment Variable" owner="env_loader">
+<msg time="2025-04-17T00:55:38.972436" level="WARN">Keyword 'Get Environment Variable' found both from a custom library 'env_loader' and a standard library 'OperatingSystem'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'env_loader.Get Environment Variable' or 'OperatingSystem.Get Environment Variable'.</msg>
+<msg time="2025-04-17T00:55:38.973549" level="INFO">${front_url} = http://localhost:3000</msg>
+<var>${front_url}</var>
+<arg>FRONT_URL</arg>
+<doc>Hakee ympäristömuuttujan arvon</doc>
+<status status="PASS" start="2025-04-17T00:55:38.972483" elapsed="0.001133"/>
+</kw>
+<kw name="Get Current Date" owner="DateTime">
+<msg time="2025-04-17T00:55:38.974514" level="INFO">${timestamp} = 20250417_005538</msg>
+<var>${timestamp}</var>
+<arg>result_format=%Y%m%d_%H%M%S</arg>
+<doc>Returns current local or UTC time with an optional increment.</doc>
+<status status="PASS" start="2025-04-17T00:55:38.973932" elapsed="0.000643"/>
+</kw>
 <kw name="New Browser" owner="Browser">
-<msg time="2025-04-09T14:23:26.882294" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksil\u00f6projekti\\browser\\traces\\temp\\75916b95-4f16-40e2-9055-1cca5860582d"}</msg>
-<msg time="2025-04-09T14:23:26.956871" level="INFO">Starting Browser process C:\Users\Edanu\.vscode\Web-Sovelluskehitys\FE\Yksilöprojekti\.venv\Lib\site-packages\Browser\wrapper\index.js using port 65419</msg>
-<msg time="2025-04-09T14:23:26.957665" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '65419']</msg>
-<msg time="2025-04-09T14:23:30.412781" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\browser\\traces\\temp\\75916b95-4f16-40e2-9055-1cca5860582d"}</msg>
+<msg time="2025-04-17T00:55:38.976605" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksil\u00f6projekti\\browser\\traces\\temp\\63ea0c7f-eae4-42dc-9a59-8ea35d4cd083"}</msg>
+<msg time="2025-04-17T00:55:39.030349" level="INFO">Starting Browser process C:\Users\Edanu\.vscode\Web-Sovelluskehitys\FE\Yksilöprojekti\.venv\Lib\site-packages\Browser\wrapper\index.js using port 63623</msg>
+<msg time="2025-04-17T00:55:39.030602" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\.venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '63623']</msg>
+<msg time="2025-04-17T00:55:41.145158" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Edanu\\.vscode\\Web-Sovelluskehitys\\FE\\Yksilöprojekti\\browser\\traces\\temp\\63ea0c7f-eae4-42dc-9a59-8ea35d4cd083"}</msg>
 <arg>chromium</arg>
 <arg>headless=No</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-04-09T14:23:26.879944" elapsed="3.533311"/>
+<status status="PASS" start="2025-04-17T00:55:38.974989" elapsed="2.170800"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2025-04-09T14:23:33.312744" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
-Error: Tried to take screenshot, but no page was open.</msg>
-<msg time="2025-04-09T14:23:33.313032" level="INFO">See also file:///C:/Users/Edanu/.vscode/Web-Sovelluskehitys/FE/Yksil%C3%B6projekti/playwright-log.txt for additional details.</msg>
-<msg time="2025-04-09T14:23:33.314155" level="FAIL">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
-Call log:
-  - navigating to "http://localhost:3000/", waiting until "load"
-</msg>
-<arg>${FRONT_URL}</arg>
+<msg time="2025-04-17T00:55:41.547674" level="INFO">Successfully initialized new page object and opened url: http://localhost:3000</msg>
+<msg time="2025-04-17T00:55:41.547844" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${front_url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="FAIL" start="2025-04-09T14:23:30.416962" elapsed="3.111853">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
+<status status="PASS" start="2025-04-17T00:55:41.146577" elapsed="0.401602"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-04-17T00:55:42.002681" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/sivu_alkutila_20250417_005538.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/sivu_alkutila_20250417_005538.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=sivu_alkutila_${timestamp}.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-04-17T00:55:41.548706" elapsed="0.454179"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Get Element" owner="Browser">
+<msg time="2025-04-17T00:55:52.227984" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-17T00:55:52.228276" level="INFO">See also file:///C:/Users/Edanu/.vscode/Web-Sovelluskehitys/FE/Yksil%C3%B6projekti/playwright-log.txt for additional details.</msg>
+<msg time="2025-04-17T00:55:52.228875" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
 Call log:
-  - navigating to "http://localhost:3000/", waiting until "load"
+  - waiting for locator('form')
+</msg>
+<arg>${LOGIN_FORM}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
+<status status="FAIL" start="2025-04-17T00:55:42.003936" elapsed="10.232351">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('form')
 </status>
 </kw>
-<kw name="Wait For Elements State" owner="Browser">
-<arg>body</arg>
-<arg>visible</arg>
-<arg>timeout=10s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.529723" elapsed="0.000410"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
-<arg>filename=alkutilanne.png</arg>
-<arg>fullPage=True</arg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.530590" elapsed="0.000253"/>
-</kw>
-<kw name="Get Element Count" owner="Browser">
-<var>${has_diary_link}</var>
-<arg>a:has-text("Päiväkirja")</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.531190" elapsed="0.000227"/>
+<msg time="2025-04-17T00:55:52.236545" level="INFO">${form_exists} = False</msg>
+<var>${form_exists}</var>
+<arg>Get Element</arg>
+<arg>${LOGIN_FORM}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-04-17T00:55:42.003449" elapsed="10.233153"/>
 </kw>
 <if>
-<branch type="IF" condition="${has_diary_link} &gt; 0">
-<kw name="Click" owner="Browser">
-<arg>a:has-text("Päiväkirja")</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.532595" elapsed="0.000280"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<arg>body</arg>
-<arg>visible</arg>
-<arg>timeout=5s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.533150" elapsed="0.000254"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
-<arg>filename=paivakirjasivu.png</arg>
-<arg>fullPage=True</arg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.533660" elapsed="0.000254"/>
-</kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.531962" elapsed="0.002077"/>
-</branch>
-<status status="NOT RUN" start="2025-04-09T14:23:33.531856" elapsed="0.002295"/>
-</if>
-<kw name="Get Element Count" owner="Browser">
-<var>${has_situation}</var>
-<arg>id=situation</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.534552" elapsed="0.000249"/>
-</kw>
-<if>
-<branch type="IF" condition="${has_situation} == 0">
-<kw name="Get Element Count" owner="Browser">
-<var>${buttons}</var>
-<arg>button</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.535534" elapsed="0.000226"/>
-</kw>
-<if>
-<branch type="IF" condition="${buttons} &gt; 0">
-<kw name="Get Text" owner="Browser">
-<var>${button_texts}</var>
-<arg>button</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.536208" elapsed="0.000199"/>
-</kw>
+<branch type="IF" condition="not ${form_exists}">
 <kw name="Log" owner="BuiltIn">
-<arg>Löytyi painikkeita: ${button_texts}</arg>
+<msg time="2025-04-17T00:55:52.239046" level="INFO">Lomaketta ei löydetty selektorilla css=form, kokeillaan muita menetelmiä</msg>
+<arg>Lomaketta ei löydetty selektorilla ${LOGIN_FORM}, kokeillaan muita menetelmiä</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.536635" elapsed="0.000213"/>
+<status status="PASS" start="2025-04-17T00:55:52.238480" elapsed="0.000668"/>
 </kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.535909" elapsed="0.001018"/>
-</branch>
-<status status="NOT RUN" start="2025-04-09T14:23:33.535881" elapsed="0.001114"/>
-</if>
 <kw name="Get Element Count" owner="Browser">
-<var>${links}</var>
-<arg>a</arg>
+<msg time="2025-04-17T00:55:52.250094" level="INFO">${has_header} = 0</msg>
+<var>${has_header}</var>
+<arg>header:has-text("OloHetki")</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.537113" elapsed="0.000186"/>
+<status status="PASS" start="2025-04-17T00:55:52.239378" elapsed="0.010794"/>
 </kw>
-<if>
-<branch type="IF" condition="${links} &gt; 0">
-<kw name="Get Text" owner="Browser">
-<var>${link_texts}</var>
-<arg>a</arg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-04-17T00:55:52.258026" level="INFO">${has_nav} = 0</msg>
+<var>${has_nav}</var>
+<arg>nav</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.537738" elapsed="0.000187"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-04-17T00:55:52.250472" elapsed="0.007621"/>
 </kw>
+<if>
+<branch type="IF" condition="${has_header} &gt; 0 or ${has_nav} &gt; 0">
 <kw name="Log" owner="BuiltIn">
-<arg>Löytyi linkkejä: ${link_texts}</arg>
+<arg>Käyttäjä näyttää olevan jo kirjautunut</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.538097" elapsed="0.000180"/>
+<status status="NOT RUN" start="2025-04-17T00:55:52.259302" elapsed="0.000206"/>
 </kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.537435" elapsed="0.000914"/>
-</branch>
-<status status="NOT RUN" start="2025-04-09T14:23:33.537410" elapsed="0.000994"/>
-</if>
-<kw name="Get Element Count" owner="Browser">
-<var>${new_entry_btn}</var>
-<arg>button:has-text("Uusi merkintä"), a:has-text("Uusi merkintä")</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.538515" elapsed="0.000182"/>
+<kw name="PASS">
+<arg>Käyttäjä on jo kirjautunut</arg>
+<status status="NOT RUN" start="2025-04-17T00:55:52.259766" elapsed="0.000198"/>
 </kw>
-<if>
-<branch type="IF" condition="${new_entry_btn} &gt; 0">
-<kw name="Click" owner="Browser">
-<arg>button:has-text("Uusi merkintä"), a:has-text("Uusi merkintä")</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.539095" elapsed="0.000184"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<arg>body</arg>
-<arg>visible</arg>
-<arg>timeout=5s</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.539711" elapsed="0.000192"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
-<arg>filename=uusi_merkinta.png</arg>
-<arg>fullPage=True</arg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.540155" elapsed="0.000241"/>
-</kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.538827" elapsed="0.001697"/>
-</branch>
-<status status="NOT RUN" start="2025-04-09T14:23:33.538803" elapsed="0.001812"/>
-</if>
-<status status="NOT RUN" start="2025-04-09T14:23:33.535144" elapsed="0.005526"/>
-</branch>
-<status status="NOT RUN" start="2025-04-09T14:23:33.535089" elapsed="0.005664"/>
-</if>
-<kw name="Get Element Count" owner="Browser">
-<var>${has_situation_now}</var>
-<arg>id=situation</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.541086" elapsed="0.000212"/>
-</kw>
-<if>
-<branch type="IF" condition="${has_situation_now} &gt; 0">
-<kw name="Fill Text" owner="Browser">
-<arg>id=situation</arg>
-<arg>Testaus Robot Frameworkilla</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.541951" elapsed="0.000189"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<arg>id=emotion</arg>
-<arg>Keskittynyt ja kiinnostunut</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.542305" elapsed="0.000189"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<var>${anxiety_level}</var>
-<arg>2</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.542663" elapsed="0.000196"/>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>css=[name="anxiety"][value="${anxiety_level}"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.543010" elapsed="0.000185"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<var>${stress_level}</var>
-<arg>3</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.543342" elapsed="0.000173"/>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>css=[name="stress"][value="${stress_level}"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.543668" elapsed="0.000172"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<var>${panic_level}</var>
-<arg>1</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.544011" elapsed="0.000172"/>
-</kw>
-<kw name="Click" owner="Browser">
-<arg>css=[name="panic"][value="${panic_level}"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.544333" elapsed="0.000170"/>
-</kw>
-<kw name="Set Variable" owner="BuiltIn">
-<var>${kuvaus}</var>
-<arg>Tämä on Robot Frameworkilla tehty automaattinen testitapaus päiväkirjamerkinnän lisäämisestä.</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.544652" elapsed="0.000169"/>
-</kw>
-<kw name="Fill Text" owner="Browser">
-<arg>id=notes</arg>
-<arg>${kuvaus}</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.544979" elapsed="0.000171"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
-<arg>filename=taytetty_lomake.png</arg>
-<arg>fullPage=True</arg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.545305" elapsed="0.000213"/>
-</kw>
-<kw name="Get Element Count" owner="Browser">
-<var>${save_btn}</var>
-<arg>button:has-text("Lisää merkintä")</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.545666" elapsed="0.000172"/>
-</kw>
-<if>
-<branch type="IF" condition="${save_btn} &gt; 0">
-<kw name="Click" owner="Browser">
-<arg>button:has-text("Lisää merkintä")</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.546255" elapsed="0.000187"/>
-</kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.545966" elapsed="0.000557"/>
+<status status="NOT RUN" start="2025-04-17T00:55:52.258621" elapsed="0.001427"/>
 </branch>
 <branch type="ELSE">
 <kw name="Get Element Count" owner="Browser">
-<var>${other_btn}</var>
-<arg>button:has-text("Tallenna"), button:has-text("Lähetä"), button[type="submit"]</arg>
+<msg time="2025-04-17T00:55:52.269503" level="INFO">${has_username} = 0</msg>
+<var>${has_username}</var>
+<arg>${USERNAME_FIELD}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.546845" elapsed="0.000220"/>
-</kw>
-<if>
-<branch type="IF" condition="${other_btn} &gt; 0">
-<kw name="Click" owner="Browser">
-<arg>button:has-text("Tallenna"), button:has-text("Lähetä"), button[type="submit"]</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.547487" elapsed="0.000177"/>
-</kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.547209" elapsed="0.000548"/>
-</branch>
-<branch type="ELSE">
-<kw name="Click" owner="Browser">
-<arg>button</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.548194" elapsed="0.000252"/>
-</kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.547831" elapsed="0.000735"/>
-</branch>
-<status status="NOT RUN" start="2025-04-09T14:23:33.547185" elapsed="0.001440"/>
-</if>
-<status status="NOT RUN" start="2025-04-09T14:23:33.546580" elapsed="0.002093"/>
-</branch>
-<status status="NOT RUN" start="2025-04-09T14:23:33.545941" elapsed="0.002795"/>
-</if>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.548875" elapsed="0.000198"/>
-</kw>
-<kw name="Take Screenshot" owner="Browser">
-<arg>filename=tallennettu.png</arg>
-<arg>fullPage=True</arg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.549237" elapsed="0.000177"/>
+<status status="PASS" start="2025-04-17T00:55:52.260431" elapsed="0.009186"/>
 </kw>
 <kw name="Get Element Count" owner="Browser">
-<var>${entries_element}</var>
-<arg>id=entries, .entries, [data-testid="entries"]</arg>
+<msg time="2025-04-17T00:55:52.280334" level="INFO">${has_password} = 0</msg>
+<var>${has_password}</var>
+<arg>${PASSWORD_FIELD}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.549566" elapsed="0.000175"/>
+<status status="PASS" start="2025-04-17T00:55:52.270037" elapsed="0.010394"/>
 </kw>
 <if>
-<branch type="IF" condition="${entries_element} &gt; 0">
-<kw name="Get Text" owner="Browser">
-<var>${entries_text}</var>
-<arg>id=entries, .entries, [data-testid="entries"]</arg>
+<branch type="IF" condition="${has_username} &gt; 0 and ${has_password} &gt; 0">
+<kw name="Log" owner="BuiltIn">
+<arg>Kirjautumiskentät löytyivät, vaikka lomaketta ei tunnistettu</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.281491" elapsed="0.000208"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.281886" elapsed="0.000188"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.282246" elapsed="0.000181"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<var>${has_button}</var>
+<arg>${LOGIN_BUTTON}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.550149" elapsed="0.000184"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.282609" elapsed="0.000182"/>
 </kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${entries_text}</arg>
-<arg>${kuvaus}</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.550692" elapsed="0.000189"/>
+<if>
+<branch type="IF" condition="${has_button} &gt; 0">
+<kw name="Click" owner="Browser">
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.283217" elapsed="0.000185"/>
 </kw>
-<kw name="Log" owner="BuiltIn">
-<arg>Merkintä tallennettu onnistuneesti</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.551031" elapsed="0.000179"/>
+<kw name="Tarkista Kirjautuminen">
+<arg>${timestamp}</arg>
+<status status="NOT RUN" start="2025-04-17T00:55:52.284003" elapsed="0.000206"/>
 </kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.549875" elapsed="0.001408"/>
-</branch>
-<branch type="ELSE">
-<kw name="Log" owner="BuiltIn">
-<arg>Varoitus: Merkintöjen näyttöelementtiä ei löytynyt, mutta merkintä saattoi silti tallentua</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.551601" elapsed="0.000180"/>
-</kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.551336" elapsed="0.000530"/>
-</branch>
-<status status="NOT RUN" start="2025-04-09T14:23:33.549848" elapsed="0.002063"/>
-</if>
-<status status="NOT RUN" start="2025-04-09T14:23:33.541653" elapsed="0.010291"/>
+<status status="NOT RUN" start="2025-04-17T00:55:52.282930" elapsed="0.001357"/>
 </branch>
 <branch type="ELSE">
 <kw name="Fail" owner="BuiltIn">
-<arg>Merkinnän lisäyslomaketta ei löytynyt</arg>
+<arg>Kirjautumispainiketta ei löydy</arg>
 <doc>Fails the test with the given message and optionally alters its tags.</doc>
-<status status="NOT RUN" start="2025-04-09T14:23:33.552263" elapsed="0.000188"/>
+<status status="NOT RUN" start="2025-04-17T00:55:52.284641" elapsed="0.000186"/>
 </kw>
-<status status="NOT RUN" start="2025-04-09T14:23:33.551989" elapsed="0.000534"/>
+<status status="NOT RUN" start="2025-04-17T00:55:52.284361" elapsed="0.000543"/>
 </branch>
-<status status="NOT RUN" start="2025-04-09T14:23:33.541624" elapsed="0.010950"/>
+<status status="NOT RUN" start="2025-04-17T00:55:52.282904" elapsed="0.002050"/>
 </if>
-<msg time="2025-04-09T14:23:33.560154" level="INFO">Set timeout to: 10000</msg>
-<status status="FAIL" start="2025-04-09T14:23:26.877883" elapsed="6.675224">Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:3000/
-Call log:
-  - navigating to "http://localhost:3000/", waiting until "load"
-</status>
+<status status="NOT RUN" start="2025-04-17T00:55:52.280686" elapsed="0.004312"/>
+</branch>
+<branch type="ELSE">
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-04-17T00:55:52.437028" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/ei_lomaketta_20250417_005538.png.png" target="_blank"&gt;&lt;img src="browser/screenshot/ei_lomaketta_20250417_005538.png.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<arg>filename=ei_lomaketta_${timestamp}.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-04-17T00:55:52.285333" elapsed="0.152054"/>
+</kw>
+<kw name="Fail" owner="BuiltIn">
+<msg time="2025-04-17T00:55:52.438356" level="FAIL">Kirjautumislomaketta tai -kenttiä ei löydy</msg>
+<arg>Kirjautumislomaketta tai -kenttiä ei löydy</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="FAIL" start="2025-04-17T00:55:52.437728" elapsed="0.000766">Kirjautumislomaketta tai -kenttiä ei löydy</status>
+</kw>
+<status status="FAIL" start="2025-04-17T00:55:52.285045" elapsed="0.153576">Kirjautumislomaketta tai -kenttiä ei löydy</status>
+</branch>
+<status status="FAIL" start="2025-04-17T00:55:52.280631" elapsed="0.158069">Kirjautumislomaketta tai -kenttiä ei löydy</status>
+</if>
+<status status="FAIL" start="2025-04-17T00:55:52.260120" elapsed="0.178667">Kirjautumislomaketta tai -kenttiä ei löydy</status>
+</branch>
+<status status="FAIL" start="2025-04-17T00:55:52.258566" elapsed="0.180275">Kirjautumislomaketta tai -kenttiä ei löydy</status>
+</if>
+<status status="FAIL" start="2025-04-17T00:55:52.237450" elapsed="0.201449">Kirjautumislomaketta tai -kenttiä ei löydy</status>
+</branch>
+<branch type="ELSE">
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${USERNAME_FIELD}</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.439345" elapsed="0.000208"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>visible</arg>
+<arg>timeout=5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.439738" elapsed="0.000184"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.440102" elapsed="0.000180"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.440442" elapsed="0.000180"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<arg>filename=lomake_taytetty_${timestamp}.png</arg>
+<arg>fullPage=True</arg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.440792" elapsed="0.000178"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>${LOGIN_BUTTON}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-04-17T00:55:52.441131" elapsed="0.000178"/>
+</kw>
+<kw name="Tarkista Kirjautuminen">
+<arg>${timestamp}</arg>
+<status status="NOT RUN" start="2025-04-17T00:55:52.441794" elapsed="0.000194"/>
+</kw>
+<status status="NOT RUN" start="2025-04-17T00:55:52.438969" elapsed="0.003094"/>
+</branch>
+<status status="FAIL" start="2025-04-17T00:55:52.237308" elapsed="0.204806">Kirjautumislomaketta tai -kenttiä ei löydy</status>
+</if>
+<msg time="2025-04-17T00:55:52.447917" level="INFO">Set timeout to: 10000</msg>
+<status status="FAIL" start="2025-04-17T00:55:38.944606" elapsed="13.498214">Kirjautumislomaketta tai -kenttiä ei löydy</status>
 </test>
-<doc>Testi päiväkirjamerkinnän lisäämiseen OloHetki-sovelluksessa</doc>
-<status status="FAIL" start="2025-04-09T14:23:26.019072" elapsed="7.543236"/>
+<doc>Kirjautumistesti joka käyttää .env-tiedostoon tallennettuja tunnuksia</doc>
+<status status="FAIL" start="2025-04-17T00:55:38.537226" elapsed="13.912552"/>
 </suite>
 <statistics>
 <total>
@@ -423,9 +306,12 @@ Call log:
 <tag>
 </tag>
 <suite>
-<stat name="Browser Demo" id="s1" pass="0" fail="1" skip="0">Browser Demo</stat>
+<stat name="Login Env Test" id="s1" pass="0" fail="1" skip="0">Login Env Test</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-04-17T00:55:38.968753" level="WARN">Keyword 'Get Environment Variable' found both from a custom library 'env_loader' and a standard library 'OperatingSystem'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'env_loader.Get Environment Variable' or 'OperatingSystem.Get Environment Variable'.</msg>
+<msg time="2025-04-17T00:55:38.971059" level="WARN">Keyword 'Get Environment Variable' found both from a custom library 'env_loader' and a standard library 'OperatingSystem'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'env_loader.Get Environment Variable' or 'OperatingSystem.Get Environment Variable'.</msg>
+<msg time="2025-04-17T00:55:38.972436" level="WARN">Keyword 'Get Environment Variable' found both from a custom library 'env_loader' and a standard library 'OperatingSystem'. The custom keyword is used. To select explicitly, and to get rid of this warning, use either 'env_loader.Get Environment Variable' or 'OperatingSystem.Get Environment Variable'.</msg>
 </errors>
 </robot>

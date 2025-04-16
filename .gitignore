@@ -1,0 +1,7 @@
+.env
+
+# Robot Framework -outputit
+outputs/
+log.html
+report.html
+output.xml

@@ -35,10 +35,14 @@
 
 
 ## Tehtävä 5: 
-###  
-#### -
-#### -
-![5](</public/img/>)
+### Tässä tehtävässä toteutetaan kirjautumistesti OloHetki-sovellukselle, joka hyödyntää .env-tiedostoon tallennettuja käyttäjätunnuksia ja salasanoja. Tämä on turvallinen tapa säilyttää arkaluontoisia tietoja, koska .env-tiedostot voidaan jättää versionhallinnan ulkopuolelle.
+#### -Tiedosto: robot --outputdir outputs tests/front/login_env_test.robot
+![5](</public/img/teht 5.png>)
 
+## Tehtävä 6: 
+### Tässä tehtävässä toteutin kirjautumistestin OloHetki-sovellukselle, joka käyttää CryptoLibrary-kirjastoa käyttäjätunnuksen ja salasanan salaamiseen. Tämä on turvallisempi tapa kuin käyttää tavallisia .env-tiedostoja, koska tunnukset ovat salattuna testin lähdekoodissa.
+#### -login_crypto_test.robot - Pääasiallinen kirjautumistesti, joka käyttää kryptattuja tunnuksia
+#### -generate_credentials.robot - Apuskripti uusien salattujen tunnusten luomiseen
 
+![6](</public/img/teht 6.png>)
 
